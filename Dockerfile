@@ -1,9 +1,10 @@
 # Use Node.js 20 (required by Baileys)
 FROM node:20-slim
 
-# Install yt-dlp dependencies
+# Install dependencies including python alias
 RUN apt-get update && apt-get install -y \
     python3 \
+    python-is-python3 \
     ffmpeg \
     curl \
     && rm -rf /var/lib/apt/lists/*
