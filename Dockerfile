@@ -21,5 +21,8 @@ RUN npm install
 # Copy all project files
 COPY . .
 
+# Expose a dummy port to make Back4App happy 💀
+EXPOSE 3000
+
 # Start the bot
 CMD ["node", "media.js"]
