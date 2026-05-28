@@ -1,5 +1,5 @@
-# Use official Node.js runtime
-FROM node:18-slim
+# Use Node.js 20 (required by Baileys)
+FROM node:20-slim
 
 # Install yt-dlp dependencies
 RUN apt-get update && apt-get install -y \
