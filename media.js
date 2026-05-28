@@ -1,5 +1,9 @@
 console.log('--- 🏁 INITIALIZING OSI-MINI MEDIATOOL ---');
 
+// Keep Back4App happy with a dummy HTTP server 💀
+const http = require('http');
+http.createServer((req, res) => res.end('OSI-MINI MEDIATOOL ONLINE')).listen(3000);
+
 const { default: makeWASocket, useMultiFileAuthState, delay, DisconnectReason, downloadContentFromMessage } = require('@whiskeysockets/baileys');
 const pino = require('pino');
 const fs = require('fs');
