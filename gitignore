@@ -1,0 +1,7 @@
+node_modules/
+media_session/
+*.mp3
+*.mp4
+thumb_*.jpg
+.env
+yt-dlp.exe
